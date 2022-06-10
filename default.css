@@ -1,0 +1,138 @@
+body {
+  overflow: hidden;
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  height: 60rem;
+  width: 80rem;
+  background: rgb(192, 167, 42);
+  overflow: hidden;
+}
+
+#scanlines {
+  height: 200%;
+  width: 200%;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), repeating-linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 0.4rem, 0.8rem 100%;
+  animation: scroll 4s infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translate(0, 0); animation-timing-function: linear; }
+  100% { transform: translate(0, -0.8rem); }
+}
+
+audio {
+  bottom: 0;
+  position: absolute;
+}
+
+#clock {
+  width: min-content;
+  filter: blur(0.05rem) drop-shadow(0.3rem 0.21rem 0.2rem rgba(100, 100, 120, 0.8));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#clockblockright {
+  content: "";
+  border-radius: 50%;
+  height: 33rem;
+  width: 33rem;
+  top: calc(50% - 21rem);
+  left: calc(50% - 16.3rem);
+  background: rgb(192, 167, 42);
+  clip-path:   polygon(50%  0 , 100% 0, 50%  0   , 50% 100%, 50% 50%);
+  position: absolute;
+  animation: clockreveal 30s linear;
+}
+
+@keyframes clockreveal {
+  0%    { clip-path: polygon(50%  0 , 100% 0, 50%  0   , 50% 50%  , 50% 50%); }
+  25%   { clip-path: polygon(50%  0%, 100% 0, 100% 0   , 50% 50%  , 50% 50%); }
+  50%   { clip-path: polygon(50%  0%, 100% 0, 100% 50% , 50% 50%  , 50% 50%); }
+  75%   { clip-path: polygon(50%  0%, 100% 0, 100% 100%, 50% 50%  , 50% 50%); }
+  76%   { clip-path: polygon(50%  0%, 100% 0, 100% 100%, 100% 100%, 50% 50%); }
+  100%  { clip-path: polygon(50%  0%, 100% 0, 100% 100%, 50% 100% , 50% 50%); }
+}
+
+.grad {
+  height: 30rem;
+  width: 30rem;
+  background: slategray;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 20rem);
+  left: calc(50% - 15rem);
+}
+
+.majorGrad { clip-path: inset(0 48.8% 88% 48.8%); }
+.midGrad { clip-path: inset(0 49% 93% 49%); }
+.minorGrad { clip-path: inset(0 49.5% 95% 49.5%); }
+
+#g1 { transform: rotate(6deg); }
+#g2 { transform: rotate(12deg); }
+#g3 { transform: rotate(17deg); }
+#g4 { transform: rotate(23deg); }
+#g5 { transform: rotate(29deg); }
+#g6 { transform: rotate(36deg); }
+#g7 { transform: rotate(42deg); }
+#g8 { transform: rotate(48deg); }
+#g9 { transform: rotate(54deg); }
+#g10 { transform: rotate(60deg); }
+#g11 { transform: rotate(66deg); }
+#g12 { transform: rotate(70deg); }
+#g13 { transform: rotate(78deg); }
+#g14 { transform: rotate(84deg); }
+#g15 { transform: rotate(90deg); }
+#g16 { transform: rotate(96deg); }
+#g17 { transform: rotate(102deg); }
+#g18 { transform: rotate(108deg); }
+#g19 { transform: rotate(114deg); }
+#g20 { transform: rotate(120deg); }
+#g21 { transform: rotate(128deg); }
+#g22 { transform: rotate(132deg); }
+#g23 { transform: rotate(138deg); }
+#g24 { transform: rotate(144deg); }
+#g25 { transform: rotate(150deg); }
+#g26 { transform: rotate(156deg); }
+#g27 { transform: rotate(162deg); }
+#g28 { transform: rotate(168deg); }
+#g29 { transform: rotate(174deg); }
+#g30 { transform: rotate(181deg); }
+#g31 { transform: rotate(186deg); }
+#g32 { transform: rotate(192deg); }
+#g33 { transform: rotate(198deg); }
+#g34 { transform: rotate(204deg); }
+#g35 { transform: rotate(210deg); }
+#g36 { transform: rotate(216deg); }
+#g37 { transform: rotate(222deg); }
+#g38 { transform: rotate(228deg); }
+#g39 { transform: rotate(234deg); }
+#g40 { transform: rotate(240deg); }
+#g41 { transform: rotate(246deg); }
+#g42 { transform: rotate(252deg); }
+#g43 { transform: rotate(259deg); }
+#g44 { transform: rotate(263deg); }
+#g45 { transform: rotate(270deg); }
+#g46 { transform: rotate(276deg); }
+#g47 { transform: rotate(282deg); }
+#g48 { transform: rotate(288deg); }
+#g49 { transform: rotate(294deg); }
+#g50 { transform: rotate(300deg); }
+#g51 { transform: rotate(306deg); }
+#g52 { transform: rotate(312deg); }
+#g53 { transform: rotate(318deg); }
+#g54 { transform: rotate(324deg); }
+#g55 { transform: rotate(331deg); }
+#g56 { transform: rotate(336deg); }
+#g57 { transform: rotate(343deg); }
+#g58 { transform: rotate(348deg); }
+#g59 { transform: rotate(354deg); }
+#g60 { transform: rotate(360deg); }
